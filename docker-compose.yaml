@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  apache:
+    image: php:8.2-apache
+    container_name: apache_td_nocika
+    volumes:
+      - C:\Users\Xavier\PhpstormProjects\Td_impots_nocika:/var/www/html
+    ports:
+      - "8080:80"
